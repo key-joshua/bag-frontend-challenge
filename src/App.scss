@@ -1,0 +1,32 @@
+@import './assets/style/fonts.scss';
+@import './assets/style/colors.scss';
+@import './assets/style/layout.scss';
+@import './assets/style/sidebar.scss';
+@import './assets/style/navbar.scss';
+@import './assets/style/landing.scss';
+@import './assets/style/details.scss';
+@import './assets/style/skeleton.scss';
+
+*,
+body {
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 100%;
+}
+
+::-webkit-scrollbar {
+	width: 05px;
+	height: 05px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: $grayActive;
+}
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 50px $gray;
+}
+::-webkit-scrollbar-thumb {
+	background: $grayActive;
+	border-radius: 50px;
+}

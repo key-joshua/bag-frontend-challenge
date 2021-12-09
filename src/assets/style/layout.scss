@@ -1,0 +1,44 @@
+.app-container {
+	display: flex;
+	min-height: 100vh;
+	position: relative;
+	overflow: hidden;
+	.sidebar-container {
+		width: 160px;
+		border-right: 1px solid $placeholder-color;
+		padding: 10px 20px;
+		position: relative;
+		z-index: 10;
+		.sidebar-shadow {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: calc(100vh);
+			backdrop-filter: blur(6px);
+			background-color: $placeholder-color;
+			display: none;
+			transform: translateX(-100%);
+		}
+	}
+	.content-container {
+		width: calc(100% - 200px);
+	}
+}
+@media (max-width: 760px) {
+	.app-container {
+		.sidebar-container {
+			position: absolute;
+			top: 0;
+			width: auto;
+			height: 100%;
+			padding: 0;
+			.sidebar-shadow {
+				display: flex;
+			}
+		}
+		.content-container {
+			width: 100%;
+		}
+	}
+}

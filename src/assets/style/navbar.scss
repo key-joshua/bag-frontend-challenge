@@ -1,0 +1,135 @@
+.navbar-container {
+	display: flex;
+	justify-content: space-between;
+	font-family: $roboto-font;
+	height: 50px;
+	padding: 10px 20px;
+	position: relative;
+	z-index: 5;
+	color: $dark-color;
+	div {
+		display: flex;
+		align-items: center;
+	}
+
+	.navbar-first-wrapper {
+		h3 {
+			font-size: 18px;
+			font-weight: 500;
+			display: flex;
+			align-items: center;
+			cursor: pointer;
+		}
+	}
+
+	.navbar-second-wrapper {
+		div:nth-child(1) {
+			display: none;
+			cursor: pointer;
+		}
+		div:nth-child(2) {
+			p {
+				font-size: 12px;
+				font-weight: 500;
+			}
+			div {
+				width: 30px;
+				height: 15px;
+				border: 1px solid $dark-color;
+				border-radius: 15px;
+				padding: 0 2.5px;
+				display: flex;
+				margin: 0 0 0 10px;
+				background-color: transparent;
+				cursor: pointer;
+				label {
+					width: 12px;
+					height: 11px;
+					margin-left: calc(100%-13px);
+					border-radius: 50%;
+					background-color: $dark-color;
+					transition: 2s ease-in-out;
+					cursor: pointer;
+				}
+			}
+		}
+		div:nth-child(3) {
+			margin: 0 30px;
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			background-color: $placeholder-color;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		div:nth-child(4) {
+			p {
+				font-size: 12px;
+				font-weight: 600;
+				margin-right: 10px;
+				color: $gray;
+			}
+			span {
+				color: $dark-color;
+				margin-left: 5px;
+			}
+			img {
+				width: 45px;
+				height: 45px;
+				object-fit: cover;
+				border-radius: 50%;
+				border: 1px solid $lighter-gray-mode-color;
+			}
+		}
+	}
+}
+
+@media (max-width: 540px) {
+	.navbar-container {
+		height: 40px;
+		.navbar-first-wrapper {
+			display: none;
+		}
+
+		.navbar-second-wrapper {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			div:nth-child(1) {
+				display: flex;
+			}
+			div:nth-child(2) {
+				p {
+					text-transform: lowercase;
+				}
+				p::first-letter {
+					text-transform: uppercase;
+				}
+				div {
+					width: 22px;
+					height: 12px;
+					border-radius: 12px;
+					padding: 0 3px;
+					label {
+						content: '';
+						width: 8px;
+						height: 8px;
+					}
+				}
+			}
+			div:nth-child(3) {
+				margin: 0 10px;
+			}
+			div:nth-child(4) {
+				p {
+					display: none;
+				}
+				img {
+					width: 30px;
+					height: 30px;
+				}
+			}
+		}
+	}
+}

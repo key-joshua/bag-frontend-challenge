@@ -1,0 +1,70 @@
+.landing-skeleton {
+	h3 {
+		width: calc(100%);
+		height: 150px;
+		position: relative;
+		top: -20px;
+		left: -10px;
+
+		border-radius: 7px;
+	}
+	h3,
+	p,
+	span {
+		background-color: $placeholder-color;
+		animation: skeletonAnimation 1.5s linear infinite;
+	}
+	p {
+		height: 20px;
+	}
+	span {
+		animation: skeletonAnimation 1.5s linear infinite;
+	}
+}
+.details-skeleton-container {
+	padding: 80px 20px 20px 20px;
+	height: 250px;
+	display: flex;
+	.details-skeleton-wrapper1,
+	.details-skeleton-wrapper2,
+	.details-skeleton-wrapper2-second-div,
+	.details-skeleton-wrapper2-child div {
+		background-color: $placeholder-color;
+	}
+	.details-skeleton-wrapper2 {
+		width: calc(100% - 470px);
+		padding: 0 10px;
+	}
+	.details-skeleton-wrapper2-child div,
+	.details-skeleton-wrapper2-second-div {
+		height: 20px;
+      animation: skeletonAnimation 1.5s linear infinite;
+	}
+	.details-skeleton-wrapper2-second-div {
+		height: 50px;
+      animation: skeletonAnimation 1.5s linear infinite;
+	}
+
+}
+@keyframes skeletonAnimation {
+	0% {
+		background-color: rgba(153, 153, 153, 0.1);
+	}
+	50% {
+		background-color: rgba(170, 170, 170, 0.4);
+	}
+	100% {
+		background-color: rgba(153, 153, 153, 0.1);
+	}
+}
+@media (max-width: 1250px) {
+   .details-skeleton-container {
+  	height: 400px;
+   }
+   @media (max-width: 892px) {
+      .details-skeleton-wrapper2-second-div,
+	.details-skeleton-wrapper2-child div{
+      width: 48vw;
+   }
+   }
+}
