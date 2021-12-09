@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import '../App.scss';
 import { Switch, Route } from 'react-router-dom';
 import Layout from './layout/Layout';
-import Landing from './landing/Landing';
+import Landing from './landing/landing';
 import Details from './details/Details';
 
 // component which wrapper all app routes
