@@ -2,7 +2,11 @@
 
 - This BAG Front-End Coding Challenge.
 
-#### This is the Hosted link of the frontend challenge [Access Web Page Direct]
+BAG Front-End Coding Challenge, is frontend project which can display informations of all countries in the world such as country name,population, capital city,currency,etc... 
+And this project provide ability to search search country of your choice using keyword or filter country by content, for purpose of get country or contries of your choice without step through all countries.
+You can also get other features such change theme (dark mode/light mode) of  web page for content readibility purpose
+
+#### This is the Hosted link of the frontend challenge [LIVE DEMO:: Access Web Page Direct]
 
 https://bag-frontend-challenge.netlify.app
 
@@ -10,6 +14,11 @@ https://bag-frontend-challenge.netlify.app
 
 https://github.com/key-joshua/bag-frontend-challenge
 
+## BUILT WITH
+
+- Reactjs
+- Redux
+- SASS
 
 ## GETTING START WITH PROJECT
 
