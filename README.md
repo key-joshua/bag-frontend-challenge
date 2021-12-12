@@ -8,7 +8,7 @@ You can also get other features such change theme (dark mode/light mode) of  web
 
 #### This is the Hosted link of the frontend challenge [LIVE DEMO:: Access Web Page Direct]
 
-https://bag-frontend-challenge.netlify.app
+https://bag-challenge.netlify.app
 
 #### This is the Github repository link of the frontend challenge.
 
